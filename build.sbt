@@ -6,7 +6,7 @@ lazy val root = project
   .in(file("."))
   .enablePlugins(ScalaJSPlugin) // Enable the Scala.js plugin in this project
   .settings(
-    name := "My ScalaJS Webpage",
+    name := "$name$",
     version := "0.1.0-SNAPSHOT",
 
     scalaVersion := scala3Version,
@@ -24,7 +24,7 @@ lazy val root = project
      */
     scalaJSLinkerConfig ~= {
       _.withModuleKind(ModuleKind.ESModule)
-        .withModuleSplitStyle(ModuleSplitStyle.SmallModulesFor(List("testvite")))
+        .withModuleSplitStyle(ModuleSplitStyle.SmallModulesFor(List("$name$")))
     },
 
     libraryDependencies += "com.raquo" %%% "laminar" % "17.0.0",
