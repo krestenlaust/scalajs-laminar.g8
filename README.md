@@ -26,7 +26,7 @@ Other software will be downloaded automatically by the commands below.
 Before doing anything, including before importing in an IDE, run
 
 ```
-$ npm install
+\$ npm install
 ```
 
 ## Development
@@ -35,7 +35,7 @@ Open two terminals.
 In the first one, start `sbt` and, within, continuously build the Scala.js project:
 
 ```
-$ sbt
+\$ sbt
 ...
 > ~fastLinkJS
 ...
@@ -44,7 +44,7 @@ $ sbt
 In the second one, start the Vite development server with
 
 ```
-$ npm run dev
+\$ npm run dev
 ...
 ```
 
@@ -57,7 +57,7 @@ You can now continuously edit the `Main.scala` file, and Vite will automatically
 Make a production build with
 
 ```
-$ npm run build
+\$ npm run build
 ```
 
 You can then find the built files in the `dist/` directory.
